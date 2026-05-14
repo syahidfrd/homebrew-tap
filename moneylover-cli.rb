@@ -5,21 +5,21 @@
 class MoneyloverCli < Formula
   desc "CLI for Money Lover personal finance app"
   homepage "https://github.com/syahidfrd/moneylover-cli"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/syahidfrd/moneylover-cli/releases/download/v0.3.0/moneylover-cli_darwin_amd64.tar.gz"
-      sha256 "501cc779cffb9030a96d2d98d0171dffad1e0864a24779d86efff022faad38d7"
+      url "https://github.com/syahidfrd/moneylover-cli/releases/download/v0.4.0/moneylover-cli_darwin_amd64.tar.gz"
+      sha256 "460b8d54efdeb1d9099018949a01f94037f5a3f6efee417cb13521b9401a4598"
 
       define_method(:install) do
         bin.install "moneylover"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/syahidfrd/moneylover-cli/releases/download/v0.3.0/moneylover-cli_darwin_arm64.tar.gz"
-      sha256 "53fc194185629cc122894c7c61122905ea031cdbbc0245636c394c16c8c2840d"
+      url "https://github.com/syahidfrd/moneylover-cli/releases/download/v0.4.0/moneylover-cli_darwin_arm64.tar.gz"
+      sha256 "3d4b2d0f4c741b56e0ebeafe03245577dc4a12dc2ad4174e5597f3300a0fb35c"
 
       define_method(:install) do
         bin.install "moneylover"
@@ -29,15 +29,15 @@ class MoneyloverCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/syahidfrd/moneylover-cli/releases/download/v0.3.0/moneylover-cli_linux_amd64.tar.gz"
-      sha256 "4caa0ac4ce16cecbaad14a18a137349caea5a28183cb757ed57c4961c62359e6"
+      url "https://github.com/syahidfrd/moneylover-cli/releases/download/v0.4.0/moneylover-cli_linux_amd64.tar.gz"
+      sha256 "fa2cbfcc728e6948c9b948e10e28776724b7e2ba1be726d4bd6c4e5041be0b6c"
       define_method(:install) do
         bin.install "moneylover"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/syahidfrd/moneylover-cli/releases/download/v0.3.0/moneylover-cli_linux_arm64.tar.gz"
-      sha256 "ecefe3562e0030903c095f79fff4368ffe79bd342c7986ee17871a327988ce78"
+      url "https://github.com/syahidfrd/moneylover-cli/releases/download/v0.4.0/moneylover-cli_linux_arm64.tar.gz"
+      sha256 "2b160681077c78c26ad1747059ac421510716bff0b230b4849382b8f7dabfc21"
       define_method(:install) do
         bin.install "moneylover"
       end
